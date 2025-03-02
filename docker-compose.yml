@@ -1,0 +1,8 @@
+services:
+  nginx:
+    build: .
+    image: mynginx
+    ports:
+      - 8080:80
+    volumes:
+      - ./nginx-conf/http.d:/etc/nginx/http.d
